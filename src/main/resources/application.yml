@@ -1,0 +1,21 @@
+spring:
+  profiles:
+    active: development
+
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://invoices.cskxxmr5gzqn.us-east-1.rds.amazonaws.com:5432/certifactura
+    username: certifactura
+    password: certifactura
+
+  jpa:
+    hibernate:
+      ddl-auto: none
+    show-sql: true
+    database: postgresql
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    open-in-view: false
+    generate-dll: false
+
+server:
+  port: 8181
